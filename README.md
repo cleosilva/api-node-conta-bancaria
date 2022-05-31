@@ -29,6 +29,5 @@
 ![conta-bancaria-post-depoisto](https://user-images.githubusercontent.com/82469705/171235635-85454fb3-c030-44ac-b776-510a2abff4bc.PNG)
 
 ### Métodos HTTP
+![conta-bancaria-metodos](https://user-images.githubusercontent.com/82469705/171264841-e9966945-4a77-4f5e-94e8-82d3c2cb1040.PNG)
 
-
-🚧 API em construção 🚧
