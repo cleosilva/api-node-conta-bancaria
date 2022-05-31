@@ -1,4 +1,3 @@
-const { request, response } = require('express');
 const express = require('express');
 
 // a versão v4 gera um número aleatório
@@ -16,6 +15,21 @@ const customers = [];
  * id - uuid
  * statement []
  */
+
+// Middleware
+function verifyIfExistsAccountCPF(request, response, next) {
+    const { cpf } = request.headers;
+
+    const customer = customers.find((customer) => customer.cpf === cpf);
+
+    if (!customer) {
+        return response.status(400).json({error: "Customer not found!"})
+    }
+
+    request.customer = customer;
+    return next();
+}
+
 
 app.post("/account", (request, response) => {
     const {cpf, name} = request.body;
@@ -39,11 +53,12 @@ app.post("/account", (request, response) => {
 
 });
 
-app.get("/statement/:cpf", (request, response) => {
-    const { cpf } = request.params;
+// passando o middleware no app.use() quando todas as rotas irão utilizar o middleware
+//app.use(verifyIfExistsAccountCPF);
 
-    const customer = customers.find((customer) => customer.cpf === cpf);
-
+// passando o middleware dentro do método quando você quer usar em rotas específicas
+app.get("/statement", verifyIfExistsAccountCPF, (request, response) => {
+    const {customer} = request;
     return response.json(customer.statement);
 
 })
