@@ -2,7 +2,7 @@
 
 - [x] Deve ser possível criar uma conta
 - [x] Deve ser possível buscar o extrato bancário do cliente 
-- [ ] Deve ser possível realizar uma depósito 
+- [x] Deve ser possível realizar uma depósito 
 - [ ] Deve ser possível realizar um saque
 - [ ] Deve ser possível buscar o extrato do cliente por data
 - [ ] Deve ser possível atualizar dados da conta do cliente
@@ -13,7 +13,7 @@
 
 - [x] Não deve ser possível cadastrar uma conta com CPF já existente
 - [x] Não deve ser possível buscar extrato em uma conta não existente
-- [ ] Não deve ser possível fazer depósito em uma conta não existente
+- [x] Não deve ser possível fazer depósito em uma conta não existente
 - [ ] Não deve ser possível fazer saque em uma conta não existente
 - [ ] Não deve ser possível excluir uma conta não existente
 - [ ] Não deve ser possível fazer saque quando o saldo for insuficiente
@@ -23,6 +23,10 @@
 
 ### Valindando CPF existente
 ![conta-bancaria-post-usuario-existente](https://user-images.githubusercontent.com/82469705/171203790-d3c7cbfe-4f48-4c9f-a1ea-e364f0fab773.PNG)
+
+### Criando deposito na conta
+![conta-bancaria-post-depoisto](https://user-images.githubusercontent.com/82469705/171235635-85454fb3-c030-44ac-b776-510a2abff4bc.PNG)
+
 
 
 🚧 API em construção 🚧
