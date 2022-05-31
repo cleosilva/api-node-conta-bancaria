@@ -4,10 +4,10 @@
 - [x] Deve ser possível buscar o extrato bancário do cliente 
 - [x] Deve ser possível realizar uma depósito 
 - [x] Deve ser possível realizar um saque
-- [ ] Deve ser possível buscar o extrato do cliente por data
-- [ ] Deve ser possível atualizar dados da conta do cliente
-- [ ] Deve ser possível obter dados da conta do cliente
-- [ ] Deve ser possível deletar uma conta
+- [x] Deve ser possível buscar o extrato do cliente por data
+- [x] Deve ser possível atualizar dados da conta do cliente
+- [x] Deve ser possível obter dados da conta do cliente
+- [x] Deve ser possível deletar uma conta
 
 ## Regras de negócio
 
@@ -16,7 +16,7 @@
 - [x] Não deve ser possível fazer depósito em uma conta não existente
 - [x] Não deve ser possível fazer saque em uma conta não existente
 - [x] Não deve ser possível fazer saque quando o saldo for insuficiente
-- [ ] Não deve ser possível excluir uma conta não existente
+- [x] Não deve ser possível excluir uma conta não existente
 
 
 ## Testando método POST no Insomnia
@@ -28,6 +28,7 @@
 ### Criando deposito na conta
 ![conta-bancaria-post-depoisto](https://user-images.githubusercontent.com/82469705/171235635-85454fb3-c030-44ac-b776-510a2abff4bc.PNG)
 
+### Métodos HTTP
 
 
 🚧 API em construção 🚧
